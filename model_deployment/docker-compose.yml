@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  recommendation_service:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - "./logging/logging.db:/app/logging/logging.db"
+      - "./logging/service.log:/app/logging/service.log"
+    env_file:
+      - .env
+    depends_on:
+      - logging_db
+
+  logging_db:
+    image: nouchka/sqlite3
+    volumes:
+      - "./logging/logging.db:/app/logging.db"
+
