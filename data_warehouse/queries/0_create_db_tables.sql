@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS Sales_Fact (
     Product_Key INT,
     Location_Key INT,
     Ship_Mode_Key INT,
-    Sales DECIMAL(10, 2) NOT NULL,
+    Sales DECIMAL(10, 10) NOT NULL,
     FOREIGN KEY (Date_Key) REFERENCES Date_Dimension(Date_Key),
     FOREIGN KEY (Ship_Date_Key) REFERENCES Date_Dimension(Date_Key),
     FOREIGN KEY (Customer_Key) REFERENCES Customer_Dimension(Customer_Key),
