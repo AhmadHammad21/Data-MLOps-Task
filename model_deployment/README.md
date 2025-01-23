@@ -2,8 +2,8 @@
 
 This project provides a Flask web service that can be used for model deployment. The following instructions will guide you through setting up the environment, installing dependencies, and running the service.
 
-**Note:** The `.env` file is included to allow the application to run smoothly without manually setting up database credentials. This is convenient for this assignment, but **it is a bad practice** to store sensitive information in the `.env` file in production environments.
-
+**Note:** The `.env` file is included to allow the application to run smoothly without manually setting up database credentials. This is convenient for this assignment, but **it is a bad practice** to store sensitive information in the `.env` file in production environments.  
+`Redis` is hosted on a free cloud database. 
 ---
 
 ## Prerequisites
