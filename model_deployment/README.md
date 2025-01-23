@@ -26,7 +26,7 @@ conda activate mlops_env
 
 
 ### 2. **Install Required Libraries**
-Create a Conda environment with Python 3.12:
+Navigate to the Directory and Install the Required Libraries
 
 ```bash
 cd model_deployment
@@ -69,5 +69,5 @@ docker-compose up --build
 python test.py
 ```
 
-Note: You can either test the application by running `python test.py` or using a postman
-to send a requests.
+Note: You can either test the application by running `python test.py` or by using a `Postman`
+to send the requests.
